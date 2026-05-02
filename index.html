@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personagens Rick and Morty</h1>
+
+        <p>
+            Projeto desenvolvido com HTML, CSS e JavaScript consumindo dados da API pública Rick and Morty.
+        </p>
+
+        <input type="text" id="pesquisa" placeholder="Pesquisar personagem...">
+    </header>
+
+    <main>
+
+        <div id="loading">
+
+            <div class="spinner"></div>
+
+            <p>Carregando personagens...</p>
+
+        </div>
+
+        <div id="container-cards"></div>
+
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="hidden">
+
+        <div class="modal-content">
+
+            <span id="fechar-modal">&times;</span>
+
+            <img id="modal-img" src="" alt="Personagem">
+
+            <h2 id="modal-nome"></h2>
+
+            <p id="modal-status"></p>
+
+            <p id="modal-especie"></p>
+
+            <p id="modal-genero"></p>
+
+            <p id="modal-origem"></p>
+
+            <p id="modal-localizacao"></p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Projeto acadêmico utilizando a API Rick and Morty.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
