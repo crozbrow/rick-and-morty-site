@@ -1,26 +1,31 @@
 <!DOCTYPE html>
+
+<!-- Define o idioma principal da página -->
 <html lang="pt-BR">
 <head>
+    <!-- Define os caracteres especiais da página -->
     <meta charset="UTF-8">
+    <!-- Responsividade para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título exibido na aba do navegador -->
     <title>Rick and Morty API</title>
-
+    <!-- Conexão com o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Cabeçalho principal do site -->
     <header>
         <h1>Personagens Rick and Morty</h1>
 
         <p>
             Projeto desenvolvido com HTML, CSS e JavaScript consumindo dados da API pública Rick and Morty.
         </p>
-
+        <!-- Campo de pesquisa de personagens -->
         <input type="text" id="pesquisa" placeholder="Pesquisar personagem...">
     </header>
-
+    <!-- Conteúdo principal da página -->
     <main>
-
+         <!-- Área de carregamento enquanto a API responde -->
         <div id="loading">
 
             <div class="spinner"></div>
@@ -28,22 +33,22 @@
             <p>Carregando personagens...</p>
 
         </div>
-
+        <!-- Container onde os cards serão criados dinamicamente -->
         <div id="container-cards"></div>
 
     </main>
 
-    <!-- MODAL -->
+    <!-- Modal exibido ao clicar em um personagem -->
     <div id="modal" class="hidden">
-
+         <!-- Conteúdo interno do modal -->
         <div class="modal-content">
-
+            <!-- Botão para fechar o modal -->
             <span id="fechar-modal">&times;</span>
-
+            <!-- Imagem ampliada do personagem -->
             <img id="modal-img" src="" alt="Personagem">
 
             <h2 id="modal-nome"></h2>
-
+            <!-- Informações adicionais do personagem -->
             <p id="modal-status"></p>
 
             <p id="modal-especie"></p>
@@ -61,7 +66,7 @@
     <footer>
         <p>Projeto acadêmico utilizando a API Rick and Morty.</p>
     </footer>
-
+    <!-- Conexão com o arquivo JavaScript -->
     <script src="script.js"></script>
 
 </body>
